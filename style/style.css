@@ -1,0 +1,300 @@
+
+/*
+ * Style sheet which is inpsired from - http://vking.kwst.net/flat/index.html
+ *
+ *  Author: Simon Thomas
+ *  Date: 28-Jan-2022
+ */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+
+/* Declare color variables */
+:root {
+    --dark: #292929;
+  --darkgrey: #414146;
+  --grey: #666666;
+  --lightgrey: #b4b4b4;
+  --white: white;
+  --contrast: #00CFFF;
+  --bebug: rgb(1,255, 255);
+}
+
+
+body {
+    background: var(--grey);
+    font-family: 'Lato';
+}
+
+
+.container {
+    max-width: 1000px;
+    margin: 30px auto 10px auto;
+    /* border: 1px solid var(--bebug); */
+}
+
+
+#socials {
+    width: 100%;
+    height: 70px;
+    position: relative;
+    background: var(--grey);
+}
+
+#social_wrapper {
+    position: absolute;
+    right: 0px;
+
+}
+
+.social {
+    width: 50px;
+    height: 50px;
+    background: var(--contrast);
+    display: inline-block;
+    margin: 5px;
+    padding: 0;
+    cursor: pointer;
+}
+
+
+.social_inner {
+    margin: 0;
+    width: 50px;
+    height: 45px;
+    transition: height 0.2s;
+    background: var(--lightgrey);
+    text-align: center;
+    vertical-align: top;
+}
+
+
+.social:hover .social_inner {
+    height: 0px;
+}
+
+
+.social_inner svg {
+    height: 30px;
+    margin: 12px;
+    fill: white;
+}
+
+
+#name {
+    background: var(--contrast);    
+    position: relative;
+    height: 100px;
+}
+
+
+#profile_picture {
+    position: absolute;
+    bottom: 20px;
+    margin-left: 40px;
+    display: inline-block;
+    transition: bottom 0.2s;
+}
+
+#profile_picture img {
+    height: 150px;
+    width: 150px;
+    border: 5px solid white;
+    filter: saturate(1.1);
+    
+}
+
+#profile_picture:hover {
+    bottom: 10px;
+}
+
+
+#name_card {
+    margin-left: 220px;
+    position: relative;
+}
+
+#name_card h1, h4 {
+    margin: 0;
+}
+
+#name_card h1 {
+    color: white;
+}
+
+#name_card h4 {
+    color: var(--darkgrey);
+}
+
+.white_bar {
+    width: 350px;
+    height: 10px;
+    border-bottom: 2px solid white;
+    position: absolute;
+    top: 50px;
+    left: 400px;
+}
+
+
+nav {
+    background: var(--darkgrey);
+    height: 50px;
+    width: 100%;
+    text-align: center;
+}
+
+
+.nav_item {
+    padding: 10px 20px 10px 20px;
+    display: inline-block;
+    margin: auto; 
+    color: var(--contrast);
+    font-weight: bold;
+}
+
+.nav_item:hover {
+    color: white;
+    cursor: pointer;
+}
+
+
+/* MAIN */
+
+#main {
+    background-color: white;
+    padding: 50px;
+}
+
+.contrast_text {
+    color: var(--contrast);
+}
+
+
+.fancy_underline {
+    display: block;
+    border-bottom: 2px solid var(--contrast);
+    width: 10px;
+    margin-left: 40px;
+}
+
+#about_intro {
+    width: 500px;
+}
+
+#about_strip {
+    height: 10px;
+    width: 20%;
+    border-bottom: 5px solid var(--contrast);
+}
+
+
+
+.pub {
+    vertical-align: top;
+    padding: 10px;
+    margin: 10px auto 10px auto;
+    background: rgb(245, 245, 245);
+    transition: background 1s;
+    
+}
+
+.pub:hover {
+    background: white;
+}
+
+.pub_image {
+    width: 20%;
+    display: inline;
+    padding: 15px;
+    vertical-align: top;
+}
+
+
+.pub_title a {
+    display: block;
+    height: 35px;
+    color: var(--contrast);
+    text-decoration: none;
+    transition: font-size 0.8s;
+}
+
+.pub_title:hover a {
+    font-size: large;
+    color: var(--grey);
+}
+
+
+.pub_text {
+    width: 60%;
+    display: inline-block;
+}
+
+.pub_abstract {
+    color: var(--grey);
+    font-style: italic;
+}
+
+.pub_reference {
+    font-size: small;
+}
+
+
+
+
+/* FOOTER */
+
+footer {
+    background: var(--darkgrey);
+    border-bottom: 15px solid var(--contrast);
+    height: 80px;
+    color: white;
+    position: relative;
+}
+
+footer p {
+    display: inline-block;
+    margin: 20px;
+    padding: 0;
+}
+
+.return {
+    display: inline;
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background: var(--contrast);
+    text-align: center;
+    font-size: 3em;
+    vertical-align: middle;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    font-weight: 300;
+}
+
+
+#return_button {
+    z-index: 2;
+    transition: top 0.4s, right 0.4s;
+}
+
+#shadow {
+    background: white;
+    opacity: 0.8;
+    top: 10px;
+}
+
+#return_button:hover {
+    top: 20px;
+    right: 20px;
+}
+
+
+
+
+hr {
+    width: 50%;
+    margin: 30px auto 30px auto;
+    color: var(--lightgrey);
+}
