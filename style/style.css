@@ -23,7 +23,7 @@
 
 
 body {
-    background: var(--grey);
+    /*background: var(--grey);*/
     font-family: 'Lato';
 }
 
@@ -39,7 +39,7 @@ body {
     width: 100%;
     height: 70px;
     position: relative;
-    background: var(--grey);
+    /*background: var(--grey);*/
 }
 
 #social_wrapper {
@@ -158,6 +158,9 @@ nav {
     cursor: pointer;
 }
 
+nav a {
+    text-decoration: none;
+}
 
 /* MAIN */
 
@@ -245,9 +248,9 @@ nav {
 /* FOOTER */
 
 footer {
-    background: var(--darkgrey);
+    /*background: var(--darkgrey);*/
     border-bottom: 15px solid var(--contrast);
-    height: 80px;
+    /*height: 80px; */
     color: white;
     position: relative;
 }
