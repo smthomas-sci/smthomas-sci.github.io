@@ -9,5 +9,17 @@
 
 
 
+window.onload = function() {
+
+
+  // add event listeners
+  //
+  document.getElementById("return_button").addEventListener("click", function() {
+    window.scrollTo(0, 0);
+  });
+
+
+}
+
 
 
